@@ -23,7 +23,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"11b6024bbf7babcc1f081e162392c94e">
+		["MD5-CAM-1.0.1"] = <"9b5c9c7d63a2d41df515512f623e368e">
 		["build_uid"] = <"8244dbb7-5599-3a26-938a-00a205d76958">
 	>
 
@@ -76,16 +76,6 @@ definition
 				}
 			}
 			ELEMENT[at0012] occurrences matches {0..1} matches {    -- Created by
-				value matches {
-					DV_TEXT matches {*}
-				}
-			}
-			ELEMENT[at0005] occurrences matches {0..1} matches {    -- Patient name
-				value matches {
-					DV_TEXT matches {*}
-				}
-			}
-			ELEMENT[at0006] occurrences matches {0..1} matches {    -- Patient ID
 				value matches {
 					DV_TEXT matches {*}
 				}
@@ -153,14 +143,6 @@ ontology
 				["at0004"] = <
 					text = <"Date created">
 					description = <"">
-				>
-				["at0005"] = <
-					text = <"Patient name">
-					description = <"The full name of the patient">
-				>
-				["at0006"] = <
-					text = <"Patient ID">
-					description = <"The Patient HP Number">
 				>
 				["at0007"] = <
 					text = <"Membership plan">
