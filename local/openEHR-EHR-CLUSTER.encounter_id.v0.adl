@@ -23,7 +23,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"7ad94b04b8c68787e8b2e64a12f6da67">
+		["MD5-CAM-1.0.1"] = <"50d01caf7ba386f372bb32891d6ecf53">
 		["build_uid"] = <"8244dbb7-5599-3a26-938a-00a205d76958">
 	>
 
@@ -43,11 +43,6 @@ definition
 			ELEMENT[at0004] occurrences matches {0..1} matches {    -- Date created
 				value matches {
 					DV_DATE_TIME matches {*}
-				}
-			}
-			ELEMENT[at0012] occurrences matches {0..1} matches {    -- Created by
-				value matches {
-					DV_TEXT matches {*}
 				}
 			}
 			ELEMENT[at0017] occurrences matches {0..1} matches {    -- Tag
@@ -92,10 +87,6 @@ ontology
 				["at0009"] = <
 					text = <"Admission Id">
 					description = <"The Unique identifier for the admission">
-				>
-				["at0012"] = <
-					text = <"Created by">
-					description = <"">
 				>
 				["at0017"] = <
 					text = <"Tag">
