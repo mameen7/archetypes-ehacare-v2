@@ -23,7 +23,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"9b5c9c7d63a2d41df515512f623e368e">
+		["MD5-CAM-1.0.1"] = <"7ad94b04b8c68787e8b2e64a12f6da67">
 		["build_uid"] = <"8244dbb7-5599-3a26-938a-00a205d76958">
 	>
 
@@ -35,39 +35,9 @@ definition
 					DV_TEXT matches {*}
 				}
 			}
-			ELEMENT[at0013] occurrences matches {0..1} matches {    -- Assessment Id
+			ELEMENT[at0009] occurrences matches {0..1} matches {    -- Admission Id
 				value matches {
 					DV_TEXT matches {*}
-				}
-			}
-			ELEMENT[at0026] occurrences matches {0..1} matches {    -- BMGF assessment requires review
-				value matches {
-					DV_BOOLEAN matches {*}
-				}
-			}
-			ELEMENT[at0024] occurrences matches {0..1} matches {    -- LLM note view state
-				value matches {
-					DV_BOOLEAN matches {*}
-				}
-			}
-			ELEMENT[at0025] occurrences matches {0..1} matches {    -- Is created by research CHEW
-				value matches {
-					DV_BOOLEAN matches {*}
-				}
-			}
-			ELEMENT[at0014] occurrences matches {0..1} matches {    -- Is assisted
-				value matches {
-					DV_BOOLEAN matches {*}
-				}
-			}
-			ELEMENT[at0015] occurrences matches {0..1} matches {    -- Is created by CHEW
-				value matches {
-					DV_BOOLEAN matches {*}
-				}
-			}
-			ELEMENT[at0016] occurrences matches {0..1} matches {    -- Is final
-				value matches {
-					DV_BOOLEAN matches {*}
 				}
 			}
 			ELEMENT[at0004] occurrences matches {0..1} matches {    -- Date created
@@ -76,31 +46,6 @@ definition
 				}
 			}
 			ELEMENT[at0012] occurrences matches {0..1} matches {    -- Created by
-				value matches {
-					DV_TEXT matches {*}
-				}
-			}
-			ELEMENT[at0007] occurrences matches {0..1} matches {    -- Membership plan
-				value matches {
-					DV_TEXT matches {*}
-				}
-			}
-			ELEMENT[at0008] occurrences matches {0..1} matches {    -- Membership status
-				value matches {
-					DV_TEXT matches {*}
-				}
-			}
-			ELEMENT[at0009] occurrences matches {0..1} matches {    -- Admission Id
-				value matches {
-					DV_TEXT matches {*}
-				}
-			}
-			ELEMENT[at0010] occurrences matches {0..1} matches {    -- Branch code
-				value matches {
-					DV_TEXT matches {*}
-				}
-			}
-			ELEMENT[at0011] occurrences matches {0..1} matches {    -- Branch name
 				value matches {
 					DV_TEXT matches {*}
 				}
@@ -144,59 +89,13 @@ ontology
 					text = <"Date created">
 					description = <"">
 				>
-				["at0007"] = <
-					text = <"Membership plan">
-					description = <"The patient membership plan">
-					comment = <"eg. standard , premium or premium international">
-				>
-				["at0008"] = <
-					text = <"Membership status">
-					description = <"The status of the membership status">
-					comment = <"eg. active or expired">
-				>
 				["at0009"] = <
 					text = <"Admission Id">
 					description = <"The Unique identifier for the admission">
 				>
-				["at0010"] = <
-					text = <"Branch code">
-					description = <"">
-				>
-				["at0011"] = <
-					text = <"Branch name">
-					description = <"">
-				>
 				["at0012"] = <
 					text = <"Created by">
 					description = <"">
-				>
-				["at0013"] = <
-					text = <"Assessment Id">
-					description = <"The assessment ID from the Episode of care - assessment Archetype.
-
-This id will be used to group encounters that belong to the same assessment. This is mostly valuable for grouping encounters into a group.
-
-
-">
-					comment = <"Example, grouping assessments that belong to same individual in the case of the BMGF study ">
-				>
-				["at0014"] = <
-					text = <"Is assisted">
-					description = <"Indicates if an encounter is assisted by Artificial intelligence or not.
-
-True means that the encounter is assisted and False means the encounter is not assisted">
-				>
-				["at0015"] = <
-					text = <"Is created by CHEW">
-					description = <"This field is specifically added for the BMGF Study.
-
-We use to toggle the display of assessment created by a chew or an MO (Medical officer)">
-				>
-				["at0016"] = <
-					text = <"Is final">
-					description = <"Indicates if an assessment is the final assessment.
-">
-					comment = <"An example use of this field is in the BMGF LLM Study">
 				>
 				["at0017"] = <
 					text = <"Tag">
@@ -210,21 +109,6 @@ We use to toggle the display of assessment created by a chew or an MO (Medical o
 				["at0023"] = <
 					text = <"Is audited disease process">
 					description = <"Indicates if disease process audit has been done on the encounter">
-				>
-				["at0024"] = <
-					text = <"LLM note view state">
-					description = <"This field has been specifically added to the BMGF Study.
-
-We use to toggle the display of assessment created by a a research CHEW">
-				>
-				["at0025"] = <
-					text = <"Is created by research CHEW">
-					description = <"">
-				>
-				["at0026"] = <
-					text = <"BMGF assessment requires review">
-					description = <"Indicates if an assessment requires a review by the MO.
-This only applies to the BMGF project">
 				>
 				["at0027"] = <
 					text = <"Is audited">
