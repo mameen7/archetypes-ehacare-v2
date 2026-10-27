@@ -23,12 +23,12 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"297578ad2c1790eb678051064003c63e">
+		["MD5-CAM-1.0.1"] = <"a6a3a839cefe5cd732ec96395f57fc80">
 		["build_uid"] = <"8244dbb7-5599-3a26-938a-00a205d76958">
 	>
 
 definition
-	CLUSTER[at0000] matches {    -- Encounter context
+	CLUSTER[at0000] matches {    -- Additional context
 		items cardinality matches {1..*; unordered} matches {
 			ELEMENT[at0002] occurrences matches {0..1} matches {    -- Encounter Id
 				value matches {
@@ -73,7 +73,7 @@ ontology
 		["en"] = <
 			items = <
 				["at0000"] = <
-					text = <"Encounter context">
+					text = <"Additional context">
 					description = <"Encounter ID is used to build relation between encounter info and  all templates/compositions performed within the encounter">
 				>
 				["at0002"] = <
