@@ -23,7 +23,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"ad9f208b7c312659555bb3c761b6e285">
+		["MD5-CAM-1.0.1"] = <"08cc6c8a05f91ae4787074560b9a6157">
 		["build_uid"] = <"533747ce-bded-38e6-a66e-b12334486866">
 	>
 
@@ -32,12 +32,20 @@ definition
 		items cardinality matches {1..*; unordered} matches {
 			ELEMENT[at0001] occurrences matches {0..1} matches {    -- Encounter ID
 				value matches {
-					DV_TEXT matches {*}
+					DV_IDENTIFIER matches {
+						issuer matches {/EHACare/}
+						type matches {/admission/}
+						assigner matches {/facility code/}
+					}
 				}
 			}
 			ELEMENT[at0002] occurrences matches {0..1} matches {    -- Admission ID
 				value matches {
-					DV_TEXT matches {*}
+					DV_IDENTIFIER matches {
+						issuer matches {/EHACare/}
+						type matches {/encounter/}
+						assigner matches {/facility code/}
+					}
 				}
 			}
 		}
