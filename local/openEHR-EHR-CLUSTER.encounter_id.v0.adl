@@ -23,7 +23,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"50d01caf7ba386f372bb32891d6ecf53">
+		["MD5-CAM-1.0.1"] = <"297578ad2c1790eb678051064003c63e">
 		["build_uid"] = <"8244dbb7-5599-3a26-938a-00a205d76958">
 	>
 
@@ -40,7 +40,7 @@ definition
 					DV_TEXT matches {*}
 				}
 			}
-			ELEMENT[at0004] occurrences matches {0..1} matches {    -- Date created
+			ELEMENT[at0004] occurrences matches {0..1} matches {    -- Last updated
 				value matches {
 					DV_DATE_TIME matches {*}
 				}
@@ -81,7 +81,7 @@ ontology
 					description = <"">
 				>
 				["at0004"] = <
-					text = <"Date created">
+					text = <"Last updated">
 					description = <"">
 				>
 				["at0009"] = <
