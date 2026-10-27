@@ -23,7 +23,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"f98c9bc86385bce33fdcf0648bf1f8a1">
+		["MD5-CAM-1.0.1"] = <"25c9e6606eeb350818e6e16e6d7043c7">
 		["build_uid"] = <"8244dbb7-5599-3a26-938a-00a205d76958">
 	>
 
@@ -38,26 +38,6 @@ definition
 			ELEMENT[at0009] occurrences matches {0..1} matches {    -- Admission Id
 				value matches {
 					DV_TEXT matches {*}
-				}
-			}
-			ELEMENT[at0017] occurrences matches {0..1} matches {    -- Tag
-				value matches {
-					DV_TEXT matches {*}
-				}
-			}
-			ELEMENT[at0022] occurrences matches {0..1} matches {    -- Is audited chart review
-				value matches {
-					DV_BOOLEAN matches {*}
-				}
-			}
-			ELEMENT[at0023] occurrences matches {0..1} matches {    -- Is audited disease process
-				value matches {
-					DV_BOOLEAN matches {*}
-				}
-			}
-			ELEMENT[at0027] occurrences matches {0..1} matches {    -- Is audited
-				value matches {
-					DV_BOOLEAN matches {*}
 				}
 			}
 		}
@@ -78,23 +58,6 @@ ontology
 				["at0009"] = <
 					text = <"Admission Id">
 					description = <"The Unique identifier for the admission">
-				>
-				["at0017"] = <
-					text = <"Tag">
-					description = <"You can use this field to label or Tag an encounter">
-					comment = <"Example, in the BMGF Project, we used the field to label encounters as A or B">
-				>
-				["at0022"] = <
-					text = <"Is audited chart review">
-					description = <"Indicates if the encounter has been \"chart reviewed\"">
-				>
-				["at0023"] = <
-					text = <"Is audited disease process">
-					description = <"Indicates if disease process audit has been done on the encounter">
-				>
-				["at0027"] = <
-					text = <"Is audited">
-					description = <"This field is for flagging audited prescriptions">
 				>
 			>
 		>
