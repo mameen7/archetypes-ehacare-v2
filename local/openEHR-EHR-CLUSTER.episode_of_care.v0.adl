@@ -23,7 +23,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"fc8173754fc237783659608a40a85c3e">
+		["MD5-CAM-1.0.1"] = <"948c5f5c01367271950c1db0b6176386">
 		["build_uid"] = <"ea00eaa8-d949-3d94-b92a-2f27e695d416">
 	>
 
@@ -50,6 +50,18 @@ definition
 			ELEMENT[at0006] occurrences matches {0..1} matches {    -- Encounter Class
 				value matches {
 					DV_TEXT matches {*}
+				}
+			}
+			ELEMENT[at0007] occurrences matches {0..1} matches {    -- Encounter State
+				value matches {
+					DV_CODED_TEXT matches {
+						defining_code matches {
+							[local::
+							at0008,    -- Draft
+							at0009,    -- Progress
+							at0010]    -- Completed
+						}
+					}
 				}
 			}
 		}
@@ -87,6 +99,22 @@ ontology
 				["at0006"] = <
 					text = <"Encounter Class">
 					description = <"">
+				>
+				["at0007"] = <
+					text = <"Encounter State">
+					description = <"">
+				>
+				["at0008"] = <
+					text = <"Draft">
+					description = <"Encounter in draft">
+				>
+				["at0009"] = <
+					text = <"Progress">
+					description = <"Encounter in progress">
+				>
+				["at0010"] = <
+					text = <"Completed">
+					description = <"Encounter completed">
 				>
 			>
 		>
