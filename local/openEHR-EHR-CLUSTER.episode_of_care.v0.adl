@@ -23,7 +23,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"948c5f5c01367271950c1db0b6176386">
+		["MD5-CAM-1.0.1"] = <"4cf5361d94b9d2e9f8b36b1e7a1695a6">
 		["build_uid"] = <"ea00eaa8-d949-3d94-b92a-2f27e695d416">
 	>
 
@@ -42,17 +42,17 @@ definition
 					}
 				}
 			}
-			ELEMENT[at0002] occurrences matches {0..1} matches {    -- Service Type
+			ELEMENT[at0002] occurrences matches {0..1} matches {    -- Service type
 				value matches {
 					DV_TEXT matches {*}
 				}
 			}
-			ELEMENT[at0006] occurrences matches {0..1} matches {    -- Encounter Class
+			ELEMENT[at0006] occurrences matches {0..1} matches {    -- Encounter class
 				value matches {
 					DV_TEXT matches {*}
 				}
 			}
-			ELEMENT[at0007] occurrences matches {0..1} matches {    -- Encounter State
+			ELEMENT[at0007] occurrences matches {0..1} matches {    -- Encounter state
 				value matches {
 					DV_CODED_TEXT matches {
 						defining_code matches {
@@ -81,7 +81,7 @@ ontology
 					description = <"">
 				>
 				["at0002"] = <
-					text = <"Service Type">
+					text = <"Service type">
 					description = <"">
 				>
 				["at0003"] = <
@@ -97,11 +97,11 @@ ontology
 					description = <"None">
 				>
 				["at0006"] = <
-					text = <"Encounter Class">
+					text = <"Encounter class">
 					description = <"">
 				>
 				["at0007"] = <
-					text = <"Encounter State">
+					text = <"Encounter state">
 					description = <"">
 				>
 				["at0008"] = <
