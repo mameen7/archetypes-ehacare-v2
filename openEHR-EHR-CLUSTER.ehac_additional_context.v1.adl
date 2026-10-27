@@ -23,7 +23,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"51903e6339689730d41ebd53d95b66b1">
+		["MD5-CAM-1.0.1"] = <"63b17fc29d1b52aa1762448d745ce1bc">
 		["build_uid"] = <"533747ce-bded-38e6-a66e-b12334486866">
 	>
 
@@ -65,7 +65,7 @@ ontology
 				>
 				["at0002"] = <
 					text = <"Admission ID">
-					description = <"Admission contaner identifier for compistions under an admission instead of normal encounter.">
+					description = <"Admission contaner identifier for compositions under an admission instead of normal encounter.">
 				>
 			>
 		>
