@@ -23,12 +23,12 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"95d3e5a527e6ae5928ee4493a0683f86">
+		["MD5-CAM-1.0.1"] = <"51903e6339689730d41ebd53d95b66b1">
 		["build_uid"] = <"533747ce-bded-38e6-a66e-b12334486866">
 	>
 
 definition
-	CLUSTER[at0000] matches {    -- Additional Context
+	CLUSTER[at0000] matches {    -- Additional context
 		items cardinality matches {1..*; unordered} matches {
 			ELEMENT[at0001] occurrences matches {0..1} matches {    -- Encounter ID
 				value matches {
@@ -56,7 +56,7 @@ ontology
 		["en"] = <
 			items = <
 				["at0000"] = <
-					text = <"Additional Context">
+					text = <"Additional context">
 					description = <"Shared operational context for EHACare compositions, carrying encounter and admission identifiers. Bound to EVENT_CONTEXT/other_context in every encounter-scoped template.">
 				>
 				["at0001"] = <
