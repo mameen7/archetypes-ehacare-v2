@@ -54,7 +54,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"8c6e864c6fa8e34f08f247982da5c27b">
+		["MD5-CAM-1.0.1"] = <"d828e971656c7fda2904e62a6d2f626a">
 		["build_uid"] = <"1f5ba765-f829-4382-b5e7-26722cc6c36d">
 		["revision"] = <"0.0.1-alpha">
 	>
@@ -128,7 +128,7 @@ definition
 							DV_TEXT matches {*}
 						}
 					}
-					allow_archetype CLUSTER[at0015] occurrences matches {0..*} matches {    -- Attending clinicians
+					allow_archetype CLUSTER[at0015] occurrences matches {0..*} matches {    -- Attending clinician
 						include
 							archetype_id/value matches {/openEHR-EHR-CLUSTER\.person(-[a-zA-Z0-9_]+)*\.v0|openEHR-EHR-CLUSTER\.person(-[a-zA-Z0-9_]+)*\.v1/}
 					}
@@ -273,7 +273,7 @@ Diagnosies should be recorded using the EVAL.problem_diagnosis archetype plus th
 					description = <"An identifier for the episode of care.">
 				>
 				["at0015"] = <
-					text = <"Attending clinicians">
+					text = <"Attending clinician">
 					description = <"Details about the consultant and attending clinicians responsible for care during the episode.">
 				>
 				["at0016"] = <
@@ -410,7 +410,7 @@ Diagnosies should be recorded using the EVAL.problem_diagnosis archetype plus th
 					description = <"*An identifier for the episode of care. (en)">
 				>
 				["at0015"] = <
-					text = <"*Attending clinicians (en)">
+					text = <"*Attending clinician (en)">
 					description = <"*The details about the consultant and attending clinicians responsible for care during the episode. (en)">
 				>
 				["at0016"] = <
@@ -549,7 +549,7 @@ Diagnosies should be recorded using the EVAL.problem_diagnosis archetype plus th
 					description = <"*An identifier for the episode of care. (en)">
 				>
 				["at0015"] = <
-					text = <"*Attending clinicians (en)">
+					text = <"*Attending clinician (en)">
 					description = <"*The details about the consultant and attending clinicians responsible for care during the episode. (en)">
 				>
 				["at0016"] = <
