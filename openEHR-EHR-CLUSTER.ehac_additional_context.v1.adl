@@ -23,7 +23,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"49e7b030605aa535d9eaf432f5877bb0">
+		["MD5-CAM-1.0.1"] = <"6b02cf3f0ce87994d98e918cd33a8b62">
 		["build_uid"] = <"533747ce-bded-38e6-a66e-b12334486866">
 	>
 
@@ -34,7 +34,7 @@ definition
 				value matches {
 					DV_IDENTIFIER matches {
 						issuer matches {/EHACare/}
-						type matches {/admission/}
+						type matches {/encounter/}
 						assigner matches {/facility code/}
 					}
 				}
