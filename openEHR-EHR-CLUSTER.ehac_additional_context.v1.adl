@@ -23,7 +23,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"4a09581721b7375eba6ab30c9bd06a1d">
+		["MD5-CAM-1.0.1"] = <"49e7b030605aa535d9eaf432f5877bb0">
 		["build_uid"] = <"533747ce-bded-38e6-a66e-b12334486866">
 	>
 
@@ -35,15 +35,6 @@ definition
 					DV_IDENTIFIER matches {
 						issuer matches {/EHACare/}
 						type matches {/admission/}
-						assigner matches {/facility code/}
-					}
-				}
-			}
-			ELEMENT[at0002] occurrences matches {0..1} matches {    -- Admission ID
-				value matches {
-					DV_IDENTIFIER matches {
-						issuer matches {/EHACare/}
-						type matches {/encounter/}
 						assigner matches {/facility code/}
 					}
 				}
@@ -62,10 +53,6 @@ ontology
 				["at0001"] = <
 					text = <"Encounter ID">
 					description = <"">
-				>
-				["at0002"] = <
-					text = <"Admission ID">
-					description = <"Admission identifier">
 				>
 			>
 		>
